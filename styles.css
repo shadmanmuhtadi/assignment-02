@@ -5,11 +5,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .main {
-    display: flex;
-    justify-content: center;
-} */
-
 .cointainer {
     background-color: black;
     width: 1400px;
@@ -64,14 +59,12 @@ body {
 }
 
 .blog-font1 {
-    /* border: 1px solid white; */
     background-color: white;
     color: black;
     border-radius: 20%;
 }
 
 .blog-font {
-    /* border: 1px solid red; */
     background-color: red;
     border-radius: 20%;
 
@@ -127,9 +120,10 @@ hr {
     margin-top: 10%;
 }
 
-
 @media (max-width: 600px) {
     main {
+        overflow-x: none;
+        overflow: none;
         width: 375px;
     }
 
@@ -145,7 +139,6 @@ hr {
 
     .blog-headling {
         display: grid;
-        grid-template-row: repeat(3, 1fr);
     }
 
     .blog-column {
@@ -156,12 +149,5 @@ hr {
     .footer-end {
         display: grid;
         grid-template-rows: repeat(1, 1fr);
-    }
-}
-
-@media (min-width: 601px) (max-width: 768px) {
-    .blog {
-        display: grid;
-        grid-template-column: repeat(2, 1fr);
     }
 }
